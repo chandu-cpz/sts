@@ -20,7 +20,7 @@ public class binaryPalindrome {
             return false;
         int copy = x;
         int reversed = 0;
-       while (copy > 0) {
+        while (copy > 0) {
             reversed = (reversed << 1) | (copy & 1);
             copy >>>= 1;
         }
