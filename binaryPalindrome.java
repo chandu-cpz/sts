@@ -5,13 +5,13 @@ public class binaryPalindrome {
     // Original implementation
     public static boolean originalIsBinaryPalindrome(int x) {
         int reversed = 0;
-        int original = x;
+        int copy = x;
         while (x > 0) {
             reversed <<= 1;
             reversed |= (x & 1);
             x >>= 1;
         }
-        return reversed == original;
+        return reversed == copy;
     }
 
     // Optimized implementation
